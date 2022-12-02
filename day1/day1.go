@@ -75,6 +75,6 @@ func Part2() {
 		return allList[i] > allList[j]
 	})
 
-	fmt.Printf("solution for day1 part2 = %d", allList[0]+allList[1]+allList[2])
+	fmt.Printf("solution for day1 part2 = %d\n", allList[0]+allList[1]+allList[2])
 
 }
