@@ -1,22 +1,22 @@
 package main
 
 import (
-	"github.com/mscandan/advent-of-code-2022/day1"
-	"github.com/mscandan/advent-of-code-2022/day2"
-	"github.com/mscandan/advent-of-code-2022/day3"
-	"github.com/mscandan/advent-of-code-2022/day4"
+	"github.com/mscandan/advent-of-code-2022/day01"
+	"github.com/mscandan/advent-of-code-2022/day02"
+	"github.com/mscandan/advent-of-code-2022/day03"
+	"github.com/mscandan/advent-of-code-2022/day04"
 )
 
 func main() {
-	day1.Part1()
-	day1.Part2()
+	day01.Part1()
+	day01.Part2()
 
-	day2.Part1()
-	day2.Part2()
+	day02.Part1()
+	day02.Part2()
 
-	day3.Part1()
-	day3.Part2()
+	day03.Part1()
+	day03.Part2()
 
-	day4.Part1()
-	day4.Part2()
+	day04.Part1()
+	day04.Part2()
 }
