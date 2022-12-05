@@ -12,7 +12,7 @@ import (
 func Part1() {
 	solution := 0
 
-	f, err := os.Open("day4/input.txt")
+	f, err := os.Open("day04/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -45,7 +45,7 @@ func Part1() {
 func Part2() {
 	solution := 0
 
-	f, err := os.Open("day4/input.txt")
+	f, err := os.Open("day04/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}

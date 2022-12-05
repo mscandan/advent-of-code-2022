@@ -22,7 +22,7 @@ func Part1() {
 	}
 
 	// open file
-	f, err := os.Open("day2/input.txt")
+	f, err := os.Open("day02/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -54,7 +54,7 @@ func Part2() {
 	}
 
 	// open file
-	f, err := os.Open("day2/input.txt")
+	f, err := os.Open("day02/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
