@@ -1,14 +1,16 @@
-        [H]         [S]         [D]
-    [S] [C]         [C]     [Q] [L]
-    [C] [R] [Z]     [R]     [H] [Z]
-    [G] [N] [H] [S] [B]     [R] [F]
-[D] [T] [Q] [F] [Q] [Z]     [Z] [N]
-[Z] [W] [F] [N] [F] [W] [J] [V] [G]
-[T] [R] [B] [C] [L] [P] [F] [L] [H]
-[H] [Q] [P] [L] [G] [V] [Z] [D] [B]
- 1   2   3   4   5   6   7   8   9 
+const initialStacks = [
+  ['H', 'T', 'Z', 'D'],
+  ['Q', 'R', 'W', 'T', 'G', 'C', 'S'],
+  ['P', 'B', 'F', 'Q', 'N', 'R', 'C', 'H'],
+  ['L', 'C', 'N', 'F', 'H', 'Z'],
+  ['G', 'L', 'F', 'Q', 'S'],
+  ['V', 'P', 'W', 'Z', 'B', 'R', 'C', 'S'],
+  ['Z', 'F', 'J'],
+  ['D', 'L', 'V', 'Z', 'R', 'H', 'Q'],
+  ['B', 'H', 'G', 'N', 'F', 'Z', 'L', 'D'],
+]
 
-move 2 from 7 to 2
+const moves = `move 2 from 7 to 2
 move 1 from 4 to 8
 move 2 from 1 to 9
 move 4 from 6 to 5
@@ -511,3 +513,35 @@ move 2 from 5 to 8
 move 1 from 7 to 3
 move 16 from 4 to 6
 move 3 from 5 to 9
+`
+
+/* moves.split('\n').forEach(move => {
+  if (move) {
+    const [, quantity, , from, , to] = move.split(" ")
+    for (let i = 0; i < quantity; i++) {
+      initialStacks[to - 1].push(initialStacks[from - 1].pop())
+    }
+  }
+})
+let ans1 = ""
+initialStacks.forEach(stack => {
+  ans1 += stack[stack.length - 1]
+})
+console.log("Solution for Day 5 Part 1: ", ans1) */
+
+moves.split('\n').forEach(move => {
+  if (move) {
+    const [, quantity, , from, , to] = move.split(" ")
+    const elToMove = []
+    for (let i = 0; i < quantity; i++) {
+      elToMove.push(initialStacks[from - 1].pop())
+    }
+    elToMove.reverse()
+    initialStacks[to - 1].push(...elToMove)
+  }
+})
+let ans2 = ""
+initialStacks.forEach(stack => {
+  ans2 += stack[stack.length - 1]
+})
+console.log('ans 2', ans2)

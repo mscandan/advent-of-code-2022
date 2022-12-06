@@ -22,4 +22,5 @@ func main() {
 	day04.Part2()
 
 	day05.Part1()
+	day05.Part2()
 }
