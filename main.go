@@ -8,6 +8,7 @@ import (
 	"github.com/mscandan/advent-of-code-2022/day05"
 	"github.com/mscandan/advent-of-code-2022/day06"
 	"github.com/mscandan/advent-of-code-2022/day07"
+	"github.com/mscandan/advent-of-code-2022/day08"
 )
 
 func main() {
@@ -31,4 +32,7 @@ func main() {
 
 	day07.Part1()
 	day07.Part2()
+
+	day08.Part1()
+	day08.Part2()
 }
