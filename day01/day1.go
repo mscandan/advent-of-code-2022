@@ -39,7 +39,7 @@ func Part1() {
 		}
 	}
 
-	fmt.Printf("Solution for day1 part1 = %d\n", maxNum)
+	fmt.Printf("Solution for Day 1 Part 1: %d\n", maxNum)
 
 }
 
@@ -75,6 +75,6 @@ func Part2() {
 		return allList[i] > allList[j]
 	})
 
-	fmt.Printf("solution for day1 part2 = %d\n", allList[0]+allList[1]+allList[2])
+	fmt.Printf("Solution for Day 1 Part 2: %d\n", allList[0]+allList[1]+allList[2])
 
 }

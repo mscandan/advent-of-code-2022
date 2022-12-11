@@ -43,7 +43,7 @@ func Part1() {
 		}
 	}
 
-	fmt.Printf("Day3 Part1 Solution: %d\n", priority)
+	fmt.Printf("Solution for Day 3 Part 1: %d\n", priority)
 }
 
 func Part2() {
@@ -86,7 +86,7 @@ func Part2() {
 
 	}
 
-	fmt.Printf("Day3 Part2 Solution: %d\n", priority)
+	fmt.Printf("Solution for Day 3 Part 2: %d\n", priority)
 }
 
 func contains(arr string, target byte) bool {

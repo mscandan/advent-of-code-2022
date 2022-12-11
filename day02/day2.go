@@ -42,7 +42,7 @@ func Part1() {
 		myScore += determineWinnerForPart1(choice1[oppenentChoice], choice2[ourChoice])
 	}
 
-	fmt.Printf("Day2 Part1 Solution: %d\n", myScore)
+	fmt.Printf("Solution for Day 2 Part 1: %d\n", myScore)
 
 }
 
@@ -74,7 +74,7 @@ func Part2() {
 		myScore += determineWinnerForPart2(choice1[oppenentChoice], ourChoice)
 	}
 
-	fmt.Printf("Day2 Part2 Solution: %d\n", myScore)
+	fmt.Printf("Solution for Day 2 Part 2: %d\n", myScore)
 }
 
 func determineWinnerForPart2(opponent string, our string) int {
